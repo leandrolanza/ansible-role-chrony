@@ -1,0 +1,7 @@
+---
+- name: Install chrony in a distribution ubuntu
+  apt:
+    name: chrony
+    state: "{{ chrony_pkg_state }}"
+  tags:
+   - ntp

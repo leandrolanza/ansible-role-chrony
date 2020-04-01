@@ -1,0 +1,6 @@
+--- 
+- name: "Install Chrony."
+  include_tasks: "chrony.yml"
+  #when: chrony_install|bool
+  tags:
+   - ntp
